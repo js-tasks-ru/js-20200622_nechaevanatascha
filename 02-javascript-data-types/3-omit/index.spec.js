@@ -19,3 +19,4 @@ describe('javascript-data-types/omit', () => {
     expect(omit(obj, 'riba')).toEqual({foo: 'foo'});
   });
 });
+
