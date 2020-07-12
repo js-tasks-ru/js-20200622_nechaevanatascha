@@ -87,7 +87,7 @@ describe('oop-basic-intro-to-dom/column-chart', () => {
     const newData = [20];
     const columnProps = getColumnProps(newData);
 
-    columnChart.update({bodyData: newData});
+    columnChart.update(newData);
 
     expect(getComputedStyle(chart.children[0]).getPropertyValue('--value')).toEqual(columnProps[0].value);
     expect(chart.children[0].dataset.tooltip).toEqual(columnProps[0].percent);
